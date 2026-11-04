@@ -124,101 +124,138 @@ footer {
 
 </body>
 </html>
+
 <!DOCTYPE html>
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NOTPAS COSMETICS</title>
+<title>COCOON VIETNAM - Mỹ phẩm thuần chay</title>
+
 <style>
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: Arial, sans-serif;
-    background: #fff8fa;
-    color: #444;
+    background: #f8f8f1;
+    color: #333;
 }
+
 header {
-    background: #f5b8ce;
-    padding: 22px;
+    background: #244b35;
+    color: white;
+    padding: 25px;
     text-align: center;
 }
+
 .logo {
-    font-size: 32px;
+    font-size: 38px;
     font-weight: bold;
-    color: white;
+    letter-spacing: 5px;
 }
+
+header p {
+    margin-top: 8px;
+}
+
 nav {
-    background: white;
+    background: #fff;
     padding: 18px;
     text-align: center;
+    position: sticky;
+    top: 0;
 }
+
 nav a {
     text-decoration: none;
-    color: #c45d85;
+    color: #31583c;
     margin: 15px;
     font-weight: bold;
 }
+
 .banner {
-    background: #fce0e9;
+    background: #dce8d5;
     text-align: center;
-    padding: 65px 20px;
+    padding: 90px 20px;
 }
+
 .banner h1 {
-    color: #c04c7a;
-    font-size: 38px;
+    font-size: 42px;
+    color: #244b35;
 }
+
 .banner p {
-    margin: 15px;
+    margin: 20px;
+    font-size: 18px;
 }
+
 button {
-    background: #d96d98;
+    background: #315d3e;
     color: white;
     border: none;
-    padding: 12px 25px;
-    border-radius: 20px;
+    padding: 13px 25px;
+    border-radius: 5px;
     cursor: pointer;
 }
+
 section {
-    padding: 35px 20px;
+    padding: 50px 25px;
     text-align: center;
 }
+
+h2 {
+    color: #31583c;
+    margin-bottom: 25px;
+}
+
 .products {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
     max-width: 1100px;
     margin: auto;
 }
+
 .product {
     background: white;
     padding: 18px;
     border-radius: 12px;
-    box-shadow: 0 2px 8px #ead5dd;
+    box-shadow: 0 3px 10px #ddd;
 }
+
 .product img {
     width: 100%;
-    height: 180px;
+    height: 210px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 8px;
 }
+
 .product h3 {
-    margin: 12px;
-    color: #bd527b;
+    color: #31583c;
+    margin: 15px 0;
 }
+
 .price {
-    color: #e14e83;
+    color: #a45d35;
     font-weight: bold;
-    margin: 10px;
+    margin: 12px;
 }
+
+.about {
+    background: #e8eddf;
+    line-height: 1.8;
+}
+
 footer {
-    background: #d96d98;
+    background: #244b35;
     color: white;
     text-align: center;
-    padding: 25px;
+    padding: 30px;
+    line-height: 2;
 }
 </style>
 </head>
@@ -226,85 +263,113 @@ footer {
 <body>
 
 <header>
-    <div class="logo">NOTPAS COSMETICS</div>
-    <p>Vẻ đẹp tự nhiên - Tự tin tỏa sáng</p>
+    <div class="logo">COCOON</div>
+    <p>Mỹ phẩm thuần chay Việt Nam</p>
 </header>
 
 <nav>
-    <a href="#">Trang chủ</a>
+    <a href="#home">Trang chủ</a>
     <a href="#about">Giới thiệu</a>
     <a href="#products">Sản phẩm</a>
     <a href="#contact">Liên hệ</a>
 </nav>
 
-<div class="banner">
-    <h1>WELCOME TO NOTPAS</h1>
-    <p>Khám phá thế giới mỹ phẩm và chăm sóc sắc đẹp</p>
+<div class="banner" id="home">
+    <h1>COCOON VIETNAM</h1>
+    <p>Thiên nhiên Việt Nam - Vẻ đẹp thuần chay</p>
     <button onclick="location.href='#products'">
-        Mua sắm ngay
+        KHÁM PHÁ NGAY
     </button>
 </div>
 
-<section id="about">
-    <h2>Về NOTPAS COSMETICS</h2>
-    <p>Chúng tôi mang đến những sản phẩm làm đẹp,
-    chăm sóc da và mỹ phẩm chất lượng.</p>
+<section id="about" class="about">
+    <h2>VỀ THƯƠNG HIỆU COCOON</h2>
+    <p>
+    Cocoon là thương hiệu mỹ phẩm thuần chay của Việt Nam,
+    lấy cảm hứng từ nguyên liệu thiên nhiên Việt Nam.
+    Các sản phẩm hướng đến chăm sóc da và tóc,
+    đồng thời đề cao vẻ đẹp bền vững.
+    </p>
 </section>
 
 <section id="products">
     <h2>SẢN PHẨM NỔI BẬT</h2>
-    <br>
+
     <div class="products">
 
         <div class="product">
-            <img src="https://placehold.co/300x200?text=Serum" alt="Serum">
-            <h3>Serum dưỡng da</h3>
-            <p class="price">189.000đ</p>
-            <button onclick="alert('Đã thêm vào giỏ hàng!')">
-                Mua ngay
+            <img src="https://placehold.co/300x250?text=Cocoon+Coffee" alt="Tẩy da chết cà phê">
+            <h3>Tẩy da chết cà phê Đắk Lắk</h3>
+            <p class="price">Giá tham khảo: 165.000đ</p>
+            <button onclick="addCart('Tẩy da chết cà phê Đắk Lắk')">
+            Thêm vào giỏ
             </button>
         </div>
 
         <div class="product">
-            <img src="https://placehold.co/300x200?text=Cleanser" alt="Sữa rửa mặt">
-            <h3>Sữa rửa mặt</h3>
-            <p class="price">129.000đ</p>
-            <button onclick="alert('Đã thêm vào giỏ hàng!')">
-                Mua ngay
+            <img src="https://placehold.co/300x250?text=Cocoon+Cleanser" alt="Sữa rửa mặt bí đao">
+            <h3>Sữa rửa mặt bí đao</h3>
+            <p class="price">Giá tham khảo: 195.000đ</p>
+            <button onclick="addCart('Sữa rửa mặt bí đao')">
+            Thêm vào giỏ
             </button>
         </div>
 
         <div class="product">
-            <img src="https://placehold.co/300x200?text=Lipstick" alt="Son môi">
-            <h3>Son môi</h3>
-            <p class="price">159.000đ</p>
-            <button onclick="alert('Đã thêm vào giỏ hàng!')">
-                Mua ngay
+            <img src="https://placehold.co/300x250?text=Cocoon+Rose" alt="Nước dưỡng hoa hồng">
+            <h3>Nước dưỡng hoa hồng</h3>
+            <p class="price">Giá tham khảo: 175.000đ</p>
+            <button onclick="addCart('Nước dưỡng hoa hồng')">
+            Thêm vào giỏ
             </button>
         </div>
 
         <div class="product">
-            <img src="https://placehold.co/300x200?text=Sunscreen" alt="Kem chống nắng">
-            <h3>Kem chống nắng</h3>
-            <p class="price">199.000đ</p>
-            <button onclick="alert('Đã thêm vào giỏ hàng!')">
-                Mua ngay
+            <img src="https://placehold.co/300x250?text=Cocoon+Hair" alt="Dầu gội bưởi">
+            <h3>Dầu gội bưởi</h3>
+            <p class="price">Giá tham khảo: 195.000đ</p>
+            <button onclick="addCart('Dầu gội bưởi')">
+            Thêm vào giỏ
             </button>
         </div>
 
     </div>
 </section>
 
+<section>
+    <h2>GIÁ TRỊ CỦA COCOON</h2>
+    <p>Thuần chay - Thiên nhiên - Bền vững</p>
+    <p>Ưu tiên nguyên liệu có nguồn gốc từ Việt Nam.</p>
+</section>
+
+<section>
+    <h2>GIỎ HÀNG</h2>
+    <p id="cart">Bạn chưa chọn sản phẩm nào.</p>
+</section>
+
 <section id="contact">
-    <h2>LIÊN HỆ VỚI CHÚNG TÔI</h2>
-    <p>Email: notpascosmetics@gmail.com</p>
-    <p>Hotline: 0988 888 888</p>
+    <h2>LIÊN HỆ</h2>
+    <p>Website: cocoonvietnam.com</p>
+    <p>Email: support@cocoonvietnam.com</p>
 </section>
 
 <footer>
-    <p>© 2026 NOTPAS COSMETICS</p>
-    <p>Cảm ơn bạn đã lựa chọn chúng tôi!</p>
+    <h2 style="color:white">COCOON VIETNAM</h2>
+    <p>Mỹ phẩm thuần chay Việt Nam</p>
+    <p>© 2026 COCOON. All Rights Reserved.</p>
 </footer>
+
+<script>
+let cart = [];
+
+function addCart(product) {
+    cart.push(product);
+    document.getElementById("cart").innerHTML =
+    "Bạn đã chọn " + cart.length + " sản phẩm:<br>" +
+    cart.join("<br>");
+    alert("Đã thêm sản phẩm vào giỏ hàng!");
+}
+</script>
 
 </body>
 </html>
